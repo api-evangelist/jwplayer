@@ -1,0 +1,59 @@
+{
+  "name": "JW Player Blog",
+  "description": "Official JW Player / JWX blog covering video streaming, OTT, advertising, analytics, and platform news.",
+  "url": "https://jwx.com/blog",
+  "rss": "https://jwx.com/blog/rss.xml",
+  "lastFetched": "2026-06-12",
+  "posts": [
+    {
+      "title": "From Startup Scrappy to Enterprise Ready: Why This Moment Defines Everything",
+      "url": "https://jwx.com/blog/from-startup-scrappy-to-enterprise-ready-why-this-moment-defines-everything",
+      "published": "2026-06-09"
+    },
+    {
+      "title": "The Attention Dividend: Why the Publishers Who Win the Next Decade Are Already Thinking Differently",
+      "url": "https://jwx.com/blog/the-attention-dividend-why-the-publishers-who-win-the-next-decade-are-already-thinking-differently",
+      "published": "2026-06-08"
+    },
+    {
+      "title": "Where Attention Becomes Revenue: Inside the Monetize Pillar",
+      "url": "https://jwx.com/blog/where-attention-becomes-revenue-inside-the-monetize-pillar",
+      "published": "2026-06-01"
+    },
+    {
+      "title": "From Anonymous Visitor to Strategic Audience: How the Engage Pillar Changes the Game",
+      "url": "https://jwx.com/blog/from-anonymous-visitor-to-strategic-audience-how-the-engage-pillar-changes-the-game",
+      "published": "2026-05-18"
+    },
+    {
+      "title": "Social Is the New Destination: How Premium Publishers Are Rebuilding Reach",
+      "url": "https://jwx.com/blog/social-is-the-new-destination-how-premium-publishers-are-rebuilding-reach",
+      "published": "2026-05-11"
+    },
+    {
+      "title": "Create Once, Adapt Everywhere: The New Operational Imperative for Modern Newsrooms",
+      "url": "https://jwx.com/blog/create-once-adapt-everywhere-the-new-operational-imperative-for-modern-newsrooms",
+      "published": "2026-05-05"
+    },
+    {
+      "title": "QuantumPath: Built by Traders, for Traders",
+      "url": "https://jwx.com/blog/quantumpath-built-by-traders-for-traders",
+      "published": "2026-05-04"
+    },
+    {
+      "title": "QuantumPath: The Right Problem at the Right Moment",
+      "url": "https://jwx.com/blog/quantumpath-the-right-problem-at-the-right-moment",
+      "published": "2026-04-27"
+    },
+    {
+      "title": "From Franken-Stack to Orchestration Layer: Introducing the Publisher Growth Platform",
+      "url": "https://jwx.com/blog/introducing-the-publisher-growth-platform",
+      "published": "2026-04-23"
+    },
+    {
+      "title": "Curiosity Over Conviction: Reflections from AI Residency Week",
+      "url": "https://jwx.com/blog/curiosity-over-conviction",
+      "published": "2026-04-21"
+    }
+  ]
+}

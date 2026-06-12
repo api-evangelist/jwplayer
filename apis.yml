@@ -109,6 +109,12 @@ common:
     url: rate-limits/jwplayer-rate-limits.yml
   - type: FinOps
     url: finops/jwplayer-finops.yml
+  - type: BlogRSS
+    url: https://jwx.com/blog/rss.xml
+  - type: Blogs
+    url: blogs/blogs.json
+  - type: JsonLd
+    url: json-ld/jwplayer-context.jsonld
 
 maintainers:
   - name: Kin Lane

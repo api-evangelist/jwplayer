@@ -1,0 +1,134 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "schema": "https://schema.org/",
+    "jwp": "https://docs.jwplayer.com/platform/reference/",
+
+    "name": "schema:name",
+    "description": "schema:description",
+    "url": "schema:url",
+    "identifier": "schema:identifier",
+    "image": "schema:image",
+    "version": "schema:version",
+    "dateCreated": "schema:dateCreated",
+    "dateModified": "schema:dateModified",
+
+    "MediaObject": "schema:MediaObject",
+    "VideoObject": "schema:VideoObject",
+    "MediaGallery": "schema:MediaGallery",
+    "Playlist": "schema:MusicPlaylist",
+    "BroadcastEvent": "schema:BroadcastEvent",
+
+    "mediaId": {
+      "@id": "jwp:media_id",
+      "@type": "schema:identifier"
+    },
+    "siteId": {
+      "@id": "jwp:site_id",
+      "@type": "schema:identifier"
+    },
+    "playerId": {
+      "@id": "jwp:player_id",
+      "@type": "schema:identifier"
+    },
+    "playlistId": {
+      "@id": "jwp:playlist_id",
+      "@type": "schema:identifier"
+    },
+    "channelId": {
+      "@id": "jwp:channel_id",
+      "@type": "schema:identifier"
+    },
+    "eventId": {
+      "@id": "jwp:event_id",
+      "@type": "schema:identifier"
+    },
+
+    "duration": "schema:duration",
+    "uploadStatus": "jwp:upload_status",
+    "processingStatus": "jwp:processing_status",
+    "mimeType": "schema:encodingFormat",
+    "fileSize": "schema:contentSize",
+    "width": "schema:width",
+    "height": "schema:height",
+    "bitrate": "schema:bitrate",
+    "posterImage": "schema:thumbnailUrl",
+    "previewImage": "schema:image",
+
+    "tags": "schema:keywords",
+    "title": "schema:name",
+    "author": "schema:author",
+    "published": "schema:datePublished",
+    "updated": "schema:dateModified",
+    "expires": "schema:expires",
+    "link": "schema:url",
+
+    "Player": {
+      "@id": "jwp:player"
+    },
+    "playerName": "schema:name",
+    "playerVersion": "schema:version",
+    "playerWidth": "schema:width",
+    "playerHeight": "schema:height",
+    "aspectRatio": "schema:videoFrameSize",
+    "responsive": "jwp:responsive",
+    "setupConfig": "jwp:setup_config",
+
+    "LiveChannel": {
+      "@id": "jwp:live_channel"
+    },
+    "LiveEvent": {
+      "@id": "jwp:live_event"
+    },
+    "streamType": "jwp:stream_type",
+    "latencyMode": "jwp:latency_mode",
+    "maxDuration": "jwp:max_duration",
+    "reconnectWindow": "jwp:reconnect_window",
+    "startTime": "schema:startDate",
+    "endTime": "schema:endDate",
+
+    "AdSchedule": {
+      "@id": "jwp:ad_schedule"
+    },
+    "adClient": "jwp:ad_client",
+    "adRule": "jwp:ad_rule",
+    "vastTag": "jwp:vast_tag",
+    "frequency": "schema:eventSchedule",
+    "startOn": "jwp:start_on",
+    "timeBetweenAds": "jwp:time_between_ads",
+
+    "DrmPolicy": {
+      "@id": "jwp:drm_policy"
+    },
+    "widevineEnabled": "jwp:widevine_enabled",
+    "playreadyEnabled": "jwp:playready_enabled",
+    "fairplayEnabled": "jwp:fairplay_enabled",
+
+    "Webhook": {
+      "@id": "jwp:webhook"
+    },
+    "webhookUrl": "schema:url",
+    "webhookEvents": "jwp:webhook_events",
+    "webhookSecret": "jwp:webhook_secret",
+
+    "Analytics": {
+      "@id": "jwp:analytics"
+    },
+    "plays": "jwp:plays",
+    "completes": "jwp:completes",
+    "impressions": "jwp:impressions",
+    "embeds": "jwp:embeds",
+    "viewTime": "jwp:view_time",
+    "uniqueViewers": "jwp:unique_viewers",
+    "completeRate": "jwp:complete_rate",
+
+    "DeliveryAPI": {
+      "@id": "jwp:delivery_api"
+    },
+    "cdnUrl": "schema:url",
+    "manifestUrl": "schema:url",
+    "hlsManifest": "jwp:hls_manifest",
+    "dashManifest": "jwp:dash_manifest",
+    "ssaiEnabled": "jwp:ssai_enabled"
+  }
+}
