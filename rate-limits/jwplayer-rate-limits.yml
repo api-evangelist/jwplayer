@@ -1,0 +1,56 @@
+specificationVersion: "0.1"
+id: jwplayer-rate-limits
+name: JW Player API Rate Limits
+description: >-
+  Rate limit policies for the JW Player Management API v2 and Delivery API.
+  The Management API enforces a per-token/per-IP rate limit of 60 requests
+  per minute. The Delivery API (CDN) has no published per-token rate limit
+  and calls do not count against the Management API quota.
+url: https://docs.jwplayer.com/platform/reference/authentication
+updated: "2026-06-12"
+
+limits:
+  - api: Management API v2
+    scope: per API token or IP address
+    requests: 60
+    period: minute
+    periodUnit: minute
+    headers:
+      - name: jw-request-limit
+        description: Maximum requests allowed per minute (always 60)
+        example: "60"
+      - name: jw-request-remaining
+        description: Remaining requests before rate limit is reached
+        example: "45"
+    errorResponse:
+      statusCode: 429
+      description: >-
+        Too Many Requests. Returned when the 60 requests/minute threshold is
+        exceeded. Callers should back off and retry after the current minute
+        window resets.
+    notes: >-
+      For implementations that consistently exceed the 60 req/min limit,
+      contact JWP Support. The team can evaluate the use case and provide
+      options such as request batching guidance or elevated limits.
+
+  - api: Delivery API
+    scope: CDN global
+    requests: null
+    period: null
+    periodUnit: null
+    headers: []
+    errorResponse: null
+    notes: >-
+      Calls to the Delivery API (cdn.jwplayer.com) do not count toward the
+      Management API rate limit. No documented per-token quota; CDN caching
+      (short TTLs) is used to optimize high-volume global read operations.
+
+authentication:
+  method: Bearer Token
+  header: Authorization
+  format: "Bearer {api_secret}"
+  keySource: JWP dashboard → Management API section → Show Secret
+  securityNotes: >-
+    API secrets grant broad account privileges. Never expose secrets in
+    client-side code, public repositories, or forums. Rotate compromised
+    secrets immediately via the JWP dashboard.

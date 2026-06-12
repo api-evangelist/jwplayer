@@ -1,0 +1,89 @@
+specificationVersion: "1.0"
+id: jwplayer-finops
+name: JW Player FinOps Framework
+description: >-
+  FOCUS-aligned FinOps guidance for managing and optimizing JW Player API and
+  platform costs. JW Player's pricing is usage-based and custom-quoted,
+  driven primarily by hours of managed content, transcoding minutes, CDN
+  delivery volume (GB), and live ingest hours. Cost visibility requires
+  dashboard monitoring and vendor engagement.
+url: https://jwx.com/video-management-delivery-pricing
+updated: "2026-06-12"
+
+costDrivers:
+  - name: Hours Managed
+    description: >-
+      Total hours of video content stored and managed on the JWP platform.
+      Drives baseline storage and management fees. Express tier caps at 1600 hrs.
+    unit: hours
+    optimizationTips:
+      - Audit and delete unused or duplicate media assets regularly
+      - Archive infrequently accessed content to reduce managed hours
+      - Use metadata tagging to identify and remove stale assets programmatically via the Management API
+
+  - name: Transcoding
+    description: >-
+      Minutes of video transcoded when uploading or processing content.
+      All tiers include transcoding; volume determines cost at enterprise scale.
+    unit: minutes transcoded
+    optimizationTips:
+      - Upload content at the highest required resolution to avoid re-transcoding
+      - Use custom renditions only where needed; avoid unnecessary rendition profiles
+      - Batch uploads during off-peak hours to manage pipeline throughput
+
+  - name: CDN Delivery
+    description: >-
+      Gigabytes of video delivered globally via CDN. High-traffic publishers
+      should monitor delivery volume closely as this is typically the largest
+      cost driver at scale.
+    unit: GB delivered
+    optimizationTips:
+      - Enable adaptive bitrate (ABR) streaming to reduce unnecessary bandwidth for low-bandwidth viewers
+      - Use geo-restriction to limit delivery to target markets
+      - Leverage CDN caching (short TTLs on Delivery API) to minimize origin fetches
+      - Analyze analytics dashboards to identify low-engagement content consuming high delivery bandwidth
+
+  - name: Live Ingest
+    description: >-
+      Hours of live content ingested via Instant Live (all tiers, max 800 hrs)
+      or Broadcast Live (Broadcasting tier only). Live streaming is significantly
+      more expensive than VOD delivery per hour.
+    unit: hours ingested
+    optimizationTips:
+      - Schedule live events during planned windows to avoid idle ingest charges
+      - Use clipping and archiving (Broadcasting tier) to repurpose live content as VOD rather than re-streaming
+      - Monitor ingest hours against plan caps to avoid overages
+
+  - name: DRM and Access Control
+    description: >-
+      Studio DRM (FairPlay, Widevine, PlayReady) and advanced access control
+      are available on the Broadcasting tier only. License request volume can
+      contribute to costs at scale.
+    unit: license requests
+    optimizationTips:
+      - Cache DRM licenses on the client where supported to reduce license request volume
+      - Scope DRM policies narrowly — apply only to content requiring protection
+
+costVisibility:
+  dashboards:
+    - name: JWP Analytics Dashboard
+      url: https://dashboard.jwplayer.com
+      description: >-
+        Provides playback, streaming, delivery, and ad analytics. Use to
+        correlate delivery GB and playback hours with cost drivers.
+  recommendations:
+    - Review the JWP dashboard analytics monthly to identify high-delivery, low-engagement content
+    - Engage JWP account team for usage reports and tier review at contract renewal
+    - Use the Management API to automate asset audits and deletion of unused media
+    - Set up webhooks to monitor transcoding events and track pipeline volume
+
+allocationStrategy:
+  - Use JWP site/property segmentation to allocate costs by business unit or project
+  - Tag media assets with custom metadata fields to enable cost attribution by content type or campaign
+  - For multi-property accounts, review per-property usage via the Management API to identify top consumers
+
+notes: >-
+  JW Player merged with Connatix and now operates as JWP Connatix (jwx.com).
+  All pricing is custom-quoted; there is no public price list. Cost optimization
+  requires active engagement with the JWP account team and diligent use of
+  the analytics dashboard and Management API for asset lifecycle management.

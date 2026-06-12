@@ -1,0 +1,88 @@
+specificationVersion: "0.1"
+id: jwplayer-plans-pricing
+name: JW Player Plans and Pricing
+description: >-
+  JW Player (now operating as JWP Connatix) offers three tiers of video
+  management and delivery plans. All tiers include transcoding, storage,
+  delivery, playlist management, and video management APIs. Pricing is
+  custom/quote-based and not publicly disclosed — contact sales for specifics.
+url: https://jwx.com/video-management-delivery-pricing
+updated: "2026-06-12"
+
+plans:
+  - name: Express Edition
+    description: >-
+      Great for low-volume content such as how-to or training videos. Includes
+      basic media management, transcoding, delivery, and the video management
+      API. Suitable for organizations with modest streaming requirements.
+    pricingModel: custom
+    price: null
+    currency: USD
+    billingPeriod: annual
+    features:
+      - Hours Managed (max 1600 hrs)
+      - Video transcoding
+      - CDN delivery
+      - Playlist management
+      - Video management API access
+      - Multiple library access roles
+      - Instant Live (max 800 hrs ingested)
+    limitations:
+      - No Studio DRM
+      - No Broadcast Live
+      - No dynamic strategy rules
+      - No 24/7 channel capture
+
+  - name: Publishing
+    description: >-
+      For publishing tutorials, demos, or interviews. Adds dynamic strategy
+      rules (with Video Player), ad revenue share, and expanded live capabilities
+      over the Express tier. Suitable for media publishers and content creators.
+    pricingModel: custom
+    price: null
+    currency: USD
+    billingPeriod: annual
+    features:
+      - Hours Managed and/or Ad Revenue Share
+      - Video transcoding
+      - CDN delivery
+      - Playlist management
+      - Video management API access
+      - Multiple library access roles
+      - Dynamic strategy rules (requires Video Player)
+      - Instant Live (max 800 hrs ingested)
+    limitations:
+      - No Studio DRM
+      - No Broadcast Live
+      - No 24/7 channel capture
+
+  - name: Broadcasting
+    description: >-
+      Live or VOD delivery to web, OTT, or CTV — sports, concerts, and
+      professional broadcasting. Includes all features including Studio DRM
+      (FairPlay, Widevine, PlayReady), Broadcast Live, clipping, archiving,
+      and 24/7 channel capture. Full-featured for enterprise broadcasters.
+    pricingModel: custom
+    price: null
+    currency: USD
+    billingPeriod: annual
+    features:
+      - Hours Managed
+      - Video transcoding
+      - CDN delivery
+      - Playlist management
+      - Video management API access
+      - Multiple library access roles
+      - Dynamic strategy rules (requires Video Player)
+      - Studio DRM (FairPlay, Widevine, PlayReady)
+      - Broadcast Live
+      - Clipping and archiving
+      - 24/7 channel capture
+      - Electronic Programming Guides (EPGs)
+    limitations: []
+
+notes: >-
+  JW Player merged with Connatix and now operates under the JWP Connatix brand
+  (jwx.com). All pricing is quote-based; there is no self-serve checkout.
+  A free trial of the Developer Plan is available for front-end and back-end
+  engineers to evaluate the platform before committing to a paid plan.
