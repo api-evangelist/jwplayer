@@ -55,5 +55,21 @@
       "url": "https://jwx.com/blog/curiosity-over-conviction",
       "published": "2026-04-21"
     }
-  ]
+  ],
+  "repo": "jwplayer",
+  "feeds": [
+    {
+      "source": "https://www.linkedin.com/company/jwplayer",
+      "error": "HTTPError"
+    },
+    {
+      "source": "https://jwx.com/blog/rss.xml",
+      "feed_url": "https://jwx.com/blog/rss.xml",
+      "title": "",
+      "saved": 2,
+      "method": "feed"
+    }
+  ],
+  "post_count": 2,
+  "fetched": "2026-06-14T20:42:17Z"
 }
