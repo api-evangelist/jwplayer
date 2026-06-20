@@ -8,7 +8,7 @@ description: >-
   live broadcasts. The Delivery API enables high-availability content embedding,
   playback metadata, streaming manifests, and SSAI configuration via CDN.
 type: Index
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 url: https://raw.githubusercontent.com/api-evangelist/jwplayer/refs/heads/main/apis.yml
 created: "2026-06-12"
 modified: "2026-06-12"
@@ -33,7 +33,7 @@ apis:
       players, playlists, live streams, advertising configurations, DRM policies,
       transformations, and webhooks. Authenticated via Bearer token with a
       60 requests/minute rate limit.
-    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://docs.jwplayer.com/platform/reference/developer-tools
     baseURL: https://api.jwplayer.com/v2
     tags:
@@ -56,7 +56,7 @@ apis:
       retrieval, poster images, streaming manifests, and server-side ad insertion
       (SSAI) configuration. Optimized for global scale with short caching.
       Calls do not count toward the Management API rate limit.
-    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://docs.jwplayer.com/platform/reference/developer-tools
     baseURL: https://cdn.jwplayer.com
     tags:
@@ -74,7 +74,7 @@ apis:
       Client-side JavaScript API for controlling the JW Player embedded in web
       pages. Exposes methods and events for playback control, configuration,
       playlist management, advertising, and analytics integrations.
-    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://docs.jwplayer.com/players/reference/javascript-player-api-introduction
     baseURL: https://cdn.jwplayer.com
     tags:
