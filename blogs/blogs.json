@@ -3,8 +3,13 @@
   "description": "Official JW Player / JWX blog covering video streaming, OTT, advertising, analytics, and platform news.",
   "url": "https://jwx.com/blog",
   "rss": "https://jwx.com/blog/rss.xml",
-  "lastFetched": "2026-06-12",
+  "lastFetched": "2026-06-21",
   "posts": [
+    {
+      "title": "From Destination Site to Adaptive Content Engine: Building the Future",
+      "url": "https://jwx.com/blog/from-destination-site-to-adaptive-content-engine-building-the-future",
+      "published": "2026-06-22"
+    },
     {
       "title": "From Startup Scrappy to Enterprise Ready: Why This Moment Defines Everything",
       "url": "https://jwx.com/blog/from-startup-scrappy-to-enterprise-ready-why-this-moment-defines-everything",
@@ -59,17 +64,17 @@
   "repo": "jwplayer",
   "feeds": [
     {
-      "source": "https://www.linkedin.com/company/jwplayer",
-      "error": "HTTPError"
-    },
-    {
       "source": "https://jwx.com/blog/rss.xml",
       "feed_url": "https://jwx.com/blog/rss.xml",
       "title": "",
       "saved": 2,
       "method": "feed"
+    },
+    {
+      "source": "https://www.linkedin.com/company/jwplayer",
+      "error": "HTTPError"
     }
   ],
-  "post_count": 2,
-  "fetched": "2026-06-14T20:42:17Z"
+  "post_count": 5,
+  "fetched": "2026-06-27T12:03:07Z"
 }
