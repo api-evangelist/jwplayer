@@ -1,0 +1,14 @@
+generated: '2026-07-11'
+method: searched
+probe: true
+source: https://trust.jwplayer.com/
+url: https://trust.jwplayer.com/
+certifications:
+- PCI DSS
+- GDPR
+evidence:
+- source: https://trust.jwplayer.com/
+  keywords:
+  - pci dss
+  - trust center
+  - gdpr

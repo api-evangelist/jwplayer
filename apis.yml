@@ -87,6 +87,10 @@ apis:
         url: https://docs.jwplayer.com/players/reference/javascript-player-api-introduction
 
 common:
+  - type: TrustCenter
+    url: security/jwplayer-trust-center.yml
+  - type: DomainSecurity
+    url: security/jwplayer-domain-security.yml
   - type: Website
     url: https://jwplayer.com
   - type: Documentation
