@@ -8,7 +8,19 @@ description: >-
   live broadcasts. The Delivery API enables high-availability content embedding,
   playback metadata, streaming manifests, and SSAI configuration via CDN.
 type: Index
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+accessModel:
+  pricing: enterprise
+  onboarding: approval
+  trial: false
+  try_now: false
+  public: false
+  label: Enterprise · Requires approval
+  confidence: medium
+  source:
+  - plans
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/jwplayer.png
 url: https://raw.githubusercontent.com/api-evangelist/jwplayer/refs/heads/main/apis.yml
 created: "2026-06-12"
 modified: "2026-06-12"
