@@ -35,6 +35,18 @@ tags:
   - Analytics
   - DRM
   - Advertising
+  - Webhook
+  - Player
+tags_raw:
+  - Video
+  - Streaming
+  - Media Management
+  - Live Streaming
+  - OTT
+  - Playlists
+  - Analytics
+  - DRM
+  - Advertising
   - Webhooks
   - Player
 
@@ -49,6 +61,14 @@ apis:
     humanURL: https://docs.jwplayer.com/platform/reference/developer-tools
     baseURL: https://api.jwplayer.com/v2
     tags:
+      - Media Management
+      - Live Streaming
+      - Playlists
+      - Players
+      - Advertising
+      - DRM
+      - Webhook
+    tags_raw:
       - Media Management
       - Live Streaming
       - Playlists
