@@ -67,7 +67,7 @@
       "source": "https://jwx.com/blog/rss.xml",
       "feed_url": "https://jwx.com/blog/rss.xml",
       "title": "",
-      "saved": 2,
+      "saved": 0,
       "method": "feed"
     },
     {
@@ -75,6 +75,6 @@
       "error": "HTTPError"
     }
   ],
-  "post_count": 23,
-  "fetched": "2026-08-15T12:11:08Z"
+  "post_count": 25,
+  "fetched": "2026-08-22T20:20:02Z"
 }
