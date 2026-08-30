@@ -158,8 +158,6 @@ common:
     url: finops/jwplayer-finops.yml
   - type: BlogRSS
     url: https://jwx.com/blog/rss.xml
-  - type: Blog
-    url: blogs/blogs.json
   - type: JSONLD
     url: json-ld/jwplayer-context.jsonld
 
