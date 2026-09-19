@@ -76,7 +76,7 @@ apis:
       - Media Management
       - Live Streaming
       - Playlists
-      - Players
+      - Player
       - Advertising
       - DRM
       - Webhook
