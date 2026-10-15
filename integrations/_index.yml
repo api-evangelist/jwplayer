@@ -66,7 +66,7 @@
     app_slug: jw-player
     beta: false
     builder: unknown (not in the directory record)
-  status: pending-partner-spec
+  status: not-a-workflow
   arazzo: null
 - slug: jwplayer-pipedream
   label: Pipedream
@@ -92,5 +92,5 @@
     actions: true
     sources: true
     builder: Pipedream repo (component)
-  status: pending-partner-spec
+  status: not-a-workflow
   arazzo: null
