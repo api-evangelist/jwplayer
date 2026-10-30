@@ -1,4 +1,4 @@
-# JW Player (jwplayer)
+# JW Player
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,52 +64,114 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-JW Player is a video player and streaming platform offering REST APIs for media management, playlist creation, player configuration, analytics, and live stream orchestration. Now operating as JWP Connatix, the platform serves publishers, broadcasters, and OTT operators with a suite of APIs covering the full video lifecycle — from upload and transcoding through delivery, monetization, and analytics. The Management API v2 enables programmatic control over media libraries, players, playlists, live broadcasts, DRM policies, advertising configurations, and webhooks. The Delivery API provides high-availability CDN-backed content distribution globally.
+JW Player is a video player and streaming platform offering REST APIs for media management, playlist creation, player configuration, analytics, and live stream orchestration. The Management API v2 provides programmatic control over your media library, players, advertising, DRM, webhooks, and live broadcasts. The Delivery API enables high-availability content embedding, playback metadata, streaming manifests, and SSAI configuration via CDN.
 
-APIs.json: https://raw.githubusercontent.com/api-evangelist/jwplayer/refs/heads/main/apis.yml
+**Areas:** Video · Streaming · Media Management · Live Streaming · OTT · Playlists · Analytics · DRM · Advertising · Webhook · Player
 
-Naftiko: https://github.com/naftiko/fleet?utm_source=api-evangelist&utm_medium=readme&utm_campaign=jwplayer-api-evangelist&utm_content=repo
+## JW Player on APIs.io
 
-## Tags
+Everything profiled for JW Player is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/jwplayer/](https://apis.io/providers/jwplayer/)** — or go straight to one of the APIs or properties below.
 
-Video, Streaming, Media Management, Live Streaming, OTT, Playlists, Analytics, DRM, Advertising, Webhooks, Player
+### APIs (3)
 
-## APIs
+- [JW Player Management API v2](https://apis.io/apis/jwplayer/jw-player-management-api-v2/) — Read-write REST API for programmatically managing your JWP media library, players, playlists, live streams, advertising configurations, DRM policies,…
+- [JW Player Delivery API](https://apis.io/apis/jwplayer/jw-player-delivery-api/) — High-availability CDN-backed API for content embedding, playback metadata retrieval, poster images, streaming manifests, and server-side ad insertion (SSAI)…
+- [JW Player JavaScript Player API](https://apis.io/apis/jwplayer/jw-player-javascript-player-api/) — Client-side JavaScript API for controlling the JW Player embedded in web pages. Exposes methods and events for playback control, configuration, playlist…
 
-| Name | Description |
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### JSON-LD (1)
+
+Linked-data contexts for the provider's vocabulary.
+
+- [Jwplayer Context](https://apis.io/jsonld/jwplayer/jwplayer-context/)
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Jwplayer Domain Security](https://apis.io/security/jwplayer/jwplayer-domain-security/)
+- [Jwplayer Trust Center](https://apis.io/security/jwplayer/jwplayer-trust-center/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Jwplayer Plans Pricing](https://apis.io/plans/jwplayer/jwplayer-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Jwplayer Rate Limits](https://apis.io/rate-limits/jwplayer/jwplayer-rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Jwplayer Finops](https://apis.io/finops/jwplayer/jwplayer-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://jwplayer.com)
+- [Documentation](https://docs.jwplayer.com)
+- [Pricing](https://jwx.com/video-management-delivery-pricing)
+- [Blog](https://jwx.com/blog)
+- [Status](https://status.jwplayer.com)
+
+## API Evangelist rating
+
+**Kin Score 20.9** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
 |---|---|
-| JW Player Management API v2 | Read-write REST API for programmatically managing media libraries, players, playlists, live streams, advertising, DRM, transformations, and webhooks. Authenticated via Bearer token with a 60 req/min rate limit. |
-| JW Player Delivery API | High-availability CDN-backed API for content embedding, playback metadata, streaming manifests, and SSAI. Calls do not count against the Management API rate limit. |
-| JW Player JavaScript Player API | Client-side JavaScript API for controlling the embedded JW Player, exposing playback, playlist, advertising, and analytics event methods. |
+| Discoverability | 71.4 |
+| Contract quality | 14.7 |
+| Contract governance | 0.0 |
+| Operational transparency | 26.3 |
+| Developer ergonomics | 2.4 |
+| Access clarity | 26.3 |
 
-## Plans, Rate Limits, and FinOps
+**Agent readiness 3.1** — human-only
 
-| Resource | Description | File |
-|---|---|---|
-| Plans | Three tiers: Express Edition, Publishing, Broadcasting — all custom-quoted, no public pricing | [plans/jwplayer-plans-pricing.yml](plans/jwplayer-plans-pricing.yml) |
-| Rate Limits | Management API: 60 requests/minute per token or IP; Delivery API has no published per-token limit | [rate-limits/jwplayer-rate-limits.yml](rate-limits/jwplayer-rate-limits.yml) |
-| FinOps | FOCUS-aligned cost optimization guidance for hours managed, transcoding, CDN delivery, and live ingest | [finops/jwplayer-finops.yml](finops/jwplayer-finops.yml) |
-
-## Timestamps
-
-- Created: 2026-06-12
-- Modified: 2026-06-12
-
-## Common
-
-| Type | URL |
+| Agent-readiness dimension | Result |
 |---|---|
-| Website | https://jwplayer.com |
-| Documentation | https://docs.jwplayer.com |
-| GitHub | https://github.com/jwplayer |
-| LinkedIn | https://www.linkedin.com/company/jwplayer |
-| Blog | https://jwx.com/blog |
-| Pricing | https://jwx.com/video-management-delivery-pricing |
-| Status Page | https://status.jwplayer.com |
-| X | https://twitter.com/jwdevelopers |
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
 
-## Maintainers
+**Regulatory alignment 21.6** — Horizontal (data, software, accessibility, platform)
 
-| Name | Email |
-|---|---|
-| Kin Lane | kin@apievangelist.com |
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/jwplayer/](https://apis.io/providers/jwplayer/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for JW Player: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/jwplayer/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
